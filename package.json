@@ -1,0 +1,29 @@
+{
+  "name": "solana-game-sdk",
+  "version": "1.0.0",
+  "description": "A comprehensive SDK for creating and managing tokens in Solana games",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/index.ts --target node --outdir ./dist",
+    "test": "bun test",
+    "lint": "bun eslint . --ext .ts"
+  },
+  "keywords": ["solana", "blockchain", "gaming", "sdk"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/spl-token": "^0.3.9",
+    "@solana/web3.js": "^1.87.6",
+    "bn.js": "^5.2.1",
+    "buffer": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2",
+    "bun-types": "latest"
+  }
+}
